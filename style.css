@@ -1,0 +1,114 @@
+* {
+    padding  : 0;
+    margin   : 0;
+    color    : rgb(68, 255, 0);
+
+}
+
+body {
+    background       : rgb(2, 0, 36);
+    background       : linear-gradient(90deg, rgba(2, 0, 36, 1) 14%, rgba(13, 9, 121, 1) 54%, rgba(0, 212, 255, 1) 100%);
+    width            : 100vw;
+    height           : 100vh;
+    position         : relative;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : space-around;
+    align-items      : center;
+
+}
+
+header {
+    position        : relative;
+    text-align      : center;
+    display         : flex;
+    flex-direction  : column;
+    width           : 30%;
+    height          : 30%;
+    justify-items   : center;
+}
+
+
+header div {
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+    justify-content  : space-around;
+}
+
+header h1 {
+    padding    : 10%;
+    font-size  : 3em;
+}
+
+header p {
+    float      : left;
+    min-width  : 40%;
+    font-size  : larger;
+}
+
+header input {
+    position          : inherit;
+    min-width         : 30%;
+    min-height        : 40%;
+    margin            : 5%;
+    background-color  : hsl(250, 80%, 25%);
+    border            : 1px solid rgb(9, 238, 223);
+}
+
+
+header div button {
+    width             : 20%;
+    height            : 50%;
+    background-color  : hsl(250, 80%, 25%);
+    border            : 1px solid rgb(9, 238, 223);
+    border-radius     : 10%;
+}
+
+
+main {
+    min-width        : 20%;
+    min-height       : 50%;
+    position         : relative;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : space-around;
+    align-items      : center;
+    text-align       : center;
+}
+
+main div {
+    display  : inline-block;
+}
+
+#Result {
+    font-size  : 2.5em;
+}
+
+#images {
+    position  : inherit;
+}
+
+#images img {
+    width  : 10%;
+
+    border-radius  : 15%;
+    background     : none !important;
+
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width   : 80%;
+        height  : 30%;
+    }
+
+    #Result {
+        font-size  : 1.5em;
+    }
+
+    main {
+        min-width   : 10%;
+        min-height  : 40%;
+    }
+}
